@@ -102,4 +102,4 @@ def about():
     return render_template('About.html')
 if __name__ == '__main__':
     app.secret_key = 'your_secret_key'
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
