@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tanabata Typing</title>
+    <link rel =" stylesheet" href ='{{url_for('static',filename='/css/homelogin.css')}}'>
+    <style>body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('{{url_for('static',filename='/img/WE.jpeg')}}') ;
+        background-size: cover;
+        background-position: center;
+    
+    }</style>
+</head>
+<body>
+    <header>
+        <h2 class ="logo">Tanabata Typing</h2>
+        <nav class = "navigation">
+            <a href="#">About</a>
+            <a href="/dashboard" >Practice</a>  
+          
+           <a href="/logout"> <button  class ="btnLogout-popup" >Logout</button></a>      
+        </nav>
+    </header>
+    <div class="welcome-box">
+        <!-- <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span> -->
+            <h2>Welcome {{user_name}}</h2>
+            <p class="welcome-msg"> welcome back!! </p>
+            <p class ="welcome-msg">start your typing test by hitting on the practice link. </p>
+    </div>
+    <script src='homelogin.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
